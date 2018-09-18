@@ -1,3 +1,8 @@
+# Latest Fixes
+Fix for path to AndroidManifest.xml for cordova android 7.0, was causing error 'Cannot read property 'manifest' of undefined'
+
+Includes an iOS fix for issue related to cordova 7.0 from flipflopapp/cordova-universal-links-plugin
+
 # Cordova Universal Links Plugin
 This Cordova plugin adds support for opening an application from the browser when user clicks on the link. Better known as:
 - [Universal Links on iOS](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
@@ -46,16 +51,11 @@ It is important not only to redirect users to your app from the web, but also pr
 - [Additional documentation links](#additional-documentation-links)
 
 ### Installation
-This requires cordova 5.0+ (current stable 1.2.1)
+
+Install via repo url directly 
 
 ```sh
-cordova plugin add cordova-universal-links-plugin
-```
-
-It is also possible to install via repo url directly (**unstable**)
-
-```sh
-cordova plugin add https://github.com/nordnet/cordova-universal-links-plugin.git
+cordova plugin add https://github.com/mike-nelson/cordova-universal-links-plugin.git
 ```
 
 ### Migrating from previous versions
